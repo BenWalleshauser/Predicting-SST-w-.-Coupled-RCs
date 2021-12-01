@@ -3,8 +3,8 @@
 Summary: [...]
 
 Functions:
--Main: This is the main code where the model is trained and then forecasts.
--etc.
+- Main: This is the main code where the model is trained and then forecasts.
+- etc.
 
 Data:
 [...]
