@@ -163,18 +163,16 @@ end
 close(g)
 SST_predicted = SST_predicted(2:val_days+1,:);                                                      %getting rid of initial condition from prediction
 
-%% Figures
-
-%Plot Map
+%%Plot Map
 PlotMap(lon,lat,n,m,LandInd,SST_predicted,SST_validate,val_days,nBox)
 
 %Plot Globe
 PlotGlobe(lon,lat,n,m,LandInd,SST_predicted,SST_validate,val_days,nBox)
 
-%Plot Error
+%%Plot Error
 PlotError(SST_predicted,SST_validate,val_days,nBox,mBox,NaNset)
 
-%Plot Time Series at Specific Coordinates
+%%Plot Time Series at Specific Coordinates
 %Desired latitude and longitude to be sampled:
 MyLat = -8.25;
 MyLon = 179.25;
