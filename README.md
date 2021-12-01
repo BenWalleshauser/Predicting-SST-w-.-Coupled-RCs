@@ -1,4 +1,5 @@
 # Predicting-SST-w-.-Coupled-RCs
+[cool image]
 
 Summary: [...]
 
