@@ -6,7 +6,7 @@ dim = n/nBox; %num of points in discretized row
 
 SavePlot = 0;
 %Uncomment the following lines if you would like to save the simulation as an AVI 
-%filename = ['MyVideo'];
+%filename = ['MyVideo.avi'];
 %myVideo = VideoWriter(filename); %open video file
 %myVideo.FrameRate = 10;  %can adjust this, 5 - 10 works well for me
 %myVideo.Quality = 100;
