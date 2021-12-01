@@ -1,6 +1,5 @@
 # Predicting-SST-w-.-Coupled-RCs
-[cool image]
-
+[inset image]
 Summary: [...]
 
 Files:
