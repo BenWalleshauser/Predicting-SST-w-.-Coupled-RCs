@@ -4,11 +4,14 @@ function PlotMap(lon,lat,n,m,LandInd,SST_predicted,SST_validation,val_days,nBox)
 dim = n/nBox; %num of points in discretized row
 [long, latg] = meshgrid(lon, lat);
 
-filename = ['C:\Users\benwa\Documents\Research\SST Predictor\Vids\',num2str(now*10^10),'.avi'];
-myVideo = VideoWriter(filename); %open video file
-myVideo.FrameRate = 10;  %can adjust this, 5 - 10 works well for me
-myVideo.Quality = 100;
-open(myVideo)
+SavePlot = 0;
+%Uncomment the following lines if you would like to save the simulation as a MP4 (recommended as MATLAB plots the animation too slowly to see change that well)
+%filename = ['MyVideo'];
+%myVideo = VideoWriter(filename); %open video file
+%myVideo.FrameRate = 10;  %can adjust this, 5 - 10 works well for me
+%myVideo.Quality = 100;
+%open(myVideo)
+%SavePlot = 1;
 
 axis tight manual % this ensures that getframe() returns a consistent size
 for elapsed = 1:val_days
@@ -111,9 +114,11 @@ for elapsed = 1:val_days
     cb4.Ticks = [0 1 2  4  6  8  10];
     ylabel(cb4,'Temperature (Degrees Kelvin)')
     ylabel(cb1,'Temperature (Degrees Kelvin)')
-
-    frame = getframe(1);    
-    writeVideo(myVideo, frame);
+    
+    if SavePlot == 1
+        frame = getframe(1);    
+        writeVideo(myVideo, frame);
+    end
 
     pause(0.001)
 
