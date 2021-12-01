@@ -5,7 +5,7 @@ dim = n/nBox; %num of points in discretized row
 [long, latg] = meshgrid(lon, lat);
 
 SavePlot = 0;
-%Uncomment the following lines if you would like to save the simulation as a MP4 (recommended as MATLAB plots the animation too slowly to see change that well)
+%Uncomment the following lines if you would like to save the simulation as a MP4 
 %filename = ['MyVideo'];
 %myVideo = VideoWriter(filename); %open video file
 %myVideo.FrameRate = 10;  %can adjust this, 5 - 10 works well for me
