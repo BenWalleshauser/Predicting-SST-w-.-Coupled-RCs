@@ -15,6 +15,6 @@ end
 
 %Each box is Deg x Deg on the map
 Deg = 180/nBox;
-ind = 120*floor((lon+180)/Deg) + ceil((90-lat)/Deg);
+ind = nBox*floor((lon+180)/Deg) + ceil((90-lat)/Deg);
 
 end
