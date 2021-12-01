@@ -9,6 +9,11 @@ Files:
 - GenerateResevoir: Creates the middle weight matrix 'A' with a chosen density and spectral radius.
 - LinReg: Performs a ridge regression to train the output matrix 'W_out' with a regularization parameter 'beta'.
 - Neighbors: Finds the neighboring indices surrounding a given index on a map. 
+- PlotError: Plots the average and maximum error of the forecast.
+- PlotGlobe: Plots the forecasted and actual SST on a globe. The orientation of the globe can be changed within the file. This animation can also be saved as an AVI if desired.
+- PlotMap: Plots the forecasted and actual SST on a flat map. This animation can also be saved as an AVI if desired.
+- PlotTimeSeries: Plots the forecasted and actual SST over time for a chosen point on the map.
+-
 
 Data:
 [...]
