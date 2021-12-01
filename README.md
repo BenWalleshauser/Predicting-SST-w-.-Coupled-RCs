@@ -7,6 +7,8 @@ Files:
 - ActualAreaRectangle: Input the index of an area on the flat map and the function outputs the actual area that the index covers on a sphere.  
 - FindPackIndices: Finds the corresponding indices on the map that are to be contained in a pack and organizes them into a column.
 - GenerateResevoir: Creates the middle weight matrix 'A' with a chosen density and spectral radius.
+- LinReg: Performs a ridge regression to train the output matrix 'W_out' with a regularization parameter 'beta'.
+- Neighbors: Finds the neighboring indices surrounding a given index on a map. 
 
 Data:
 [...]
