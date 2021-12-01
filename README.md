@@ -4,7 +4,7 @@ Summary: Reservoir computing is a type of neural net that uses randomly generate
 
 Files:
 - Main: Use this file to run the model. This is the main code which contains the architecture of the RCs and also where metaparameters can be adjusted.
-- [...]
+- ActualAreaRectangle: Input the index of an area on the flat map and the function outputs the actual area that the index covers on a sphere.  
 
 Data:
 [...]
