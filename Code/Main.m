@@ -38,7 +38,7 @@ mBox = 240;   %Number of longitudes
 %Number of rows and columns per RC (can change)
 nPack = 4;
 mPack = 4;
-NumPacks = (nBox*mBox)/(nPack*mPack);
+NumPacks = (nBox*mBox)/(nPack*mPack);    %Number of packs, each pack will have its own RC
 
 %Each PackInd(:,i) will have its own RC
 PackInd = FindPackIndices(SST_total,nBox,mBox,nPack,mPack,NaNset);
