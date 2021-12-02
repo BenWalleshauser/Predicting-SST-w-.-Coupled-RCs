@@ -1,4 +1,4 @@
-function PlotMap(lon,lat,n,m,LandInd,SSTpredicted,ValAvgs,val_days,nBox)
+function PlotGlobe(lon,lat,n,m,LandInd,SSTpredicted,ValAvgs,val_days,nBox)
 % Plotting Globe Data
 
 SSTPredicted_Plot = 250.*ones(n,m);
