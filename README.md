@@ -1,6 +1,6 @@
 # Predicting Sea Surface Temperatures with Coupled Reservoir Computers
 
-Summary: Reservoir computing is a type of neural net that uses randomly generated input and middle weights, which effectively reduces training time compared to a traditional RNN. In these files, coupled reservoir computers are utilized in order to predict global sea surface temperatures (SST). In order to create a trained model which will then subsequently forecast SSTs, simply open the file in the 'Code' folder titled 'Main' and hit run.
+Reservoir computing is a type of neural net that uses randomly generated input and middle weights, which effectively reduces training time compared to a traditional RNN. In these files, coupled reservoir computers are utilized in order to predict global sea surface temperatures (SST). In order to create a trained model which will then subsequently forecast SSTs, simply open the file in the 'Code' folder titled 'Main' and hit run.
 
 If you'd like to see previously collected results animated on a map or globe, download one of the MP4s above.
 
