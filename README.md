@@ -4,7 +4,7 @@ Reservoir computing is a type of neural net that uses randomly generated input a
 
 If you'd like to see previously collected results animated on a map or globe, download one of the MP4s above.
 
-Files:
+**Code:**
 - `Main`: Use this file to run the model. This is the main code which contains the architecture of the RCs and also where metaparameters can be adjusted.
 - `ActualAreaRectangle`: Input the index of an area on the flat map and the function outputs the actual area that the index covers on a sphere.  
 - `FindPackIndices`: Finds the corresponding indices on the map that are to be contained in a pack and organizes them into a column.
@@ -18,7 +18,7 @@ Files:
 - `ReturnCoords`: Returns the coordinates of an index.
 - `ReturnInds`: Returns the index of a point specified by coordinates.
 
-Data:
+**Data**:
 The dataset used to train and validate the model is titled “GHRSST Level 4 MUR 0.25deg Global Foundation Sea Surface Temperature Analysis (v4.2)” which
 contains sea surface temperature data in degrees Kelvin on a global 0.25° grid from 2002 to 2021 in one day increments. This version is based on nighttime
 GHRSST L2P skin and sub skin SST observations from several instruments, and is publicly available online via PODAAC [1]. The data was downloaded with the use of OPENDAP on 10/10/2021. The years 2003 to 2020 of the dataset were selected to form the training and validation dataset. The data is given in an equirectangular format, which is used throughout the modelling process for simplification purposes even though this implicitly leads to a more refined mesh near the pole. 
@@ -28,6 +28,7 @@ The dataset was downloaded and then processed such that the grid-size was now 1.
 *To download the processed dataset:*\
 Go to the shared Google Drive folder [here](https://drive.google.com/drive/folders/1cQlzee6pGvgV4Ght5c5QYSn3I--r9Zm9?usp=sharing), and download the file titled `SST_Data.mat`, which you could then save to the same path as `Main`.
 
+**References:**
 [1]:  JPL MUR MEaSUREs Project. 2019. GHRSST
 Level 4 MUR 0.25 deg Global Foundation
 Sea Surface Temperature Analysis. Ver. 4.2.
