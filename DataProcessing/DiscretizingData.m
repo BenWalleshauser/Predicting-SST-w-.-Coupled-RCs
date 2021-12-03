@@ -1,7 +1,7 @@
 % Ben Walleshauser
 % 9/27
 
-%Discretizes and compiles Data
+%Discretizes and compiles data
 %% Initialization Data
 clc
 clear 
