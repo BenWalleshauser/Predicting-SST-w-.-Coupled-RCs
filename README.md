@@ -4,7 +4,7 @@ Reservoir computing is a type of neural net that uses randomly generated input a
 
 If you'd like to see previously collected results animated on a map or globe, download one of the MP4s above.
 
-**Code:**\
+**Code:**
 - `Main`: Use this file to run the model. This is the main code which contains the architecture of the RCs and also where metaparameters can be adjusted.
 - `ActualAreaRectangle`: Input the index of an area on the flat map and the function outputs the actual area that the index covers on a sphere.  
 - `FindPackIndices`: Finds the corresponding indices on the map that are to be contained in a pack and organizes them into a column.
