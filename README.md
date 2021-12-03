@@ -19,16 +19,18 @@ Files:
 - `ReturnInds`: Returns the index of a point specified by coordinates.
 
 Data:
-The dataset used to train and validate the model is titled “GHRSST Level 4 MUR 0.25deg Global Foundation Sea Surface Temperature Analysis (v4.2)” which
-contains sea surface temperature data in degrees Kelvin
-on a global 0.25 degree grid from 2002 to 2021 in one
-day increments. This version is based on nighttime
-GHRSST L2P skin and sub skin SST observations from
-several instruments, and is publicly available online via
-PODAAC [1]. The data was downloaded with the use
-of OPENDAP on 10/10/2021. The years 2003 to 2020
-of the dataset were selected to form the training and
-validation dataset. The data is given in an equirectangular format, which is used throughout the modelling
-process for simplification purposes even though this implicitly leads to a more refined mesh near the pole
+The dataset used to train and validate the model is titled “GHRSST Level 4 MUR 0.25deg Global Foundation Sea Surface Temperature Analysis (v4.2)” which
+contains sea surface temperature data in degrees Kelvin on a global 0.25° grid from 2002 to 2021 in one day increments. This version is based on nighttime
+GHRSST L2P skin and sub skin SST observations from several instruments, and is publicly available online via PODAAC [1]. The data was downloaded with the use of OPENDAP on 10/10/2021. The years 2003 to 2020 of the dataset were selected to form the training and validation dataset. The data is given in an equirectangular format, which is used throughout the modelling process for simplification purposes even though this implicitly leads to a more refined mesh near the pole. 
 
+The dataset was downloaded and then processed such that the grid-size was now 1.50°x1.50°. The files used to download and discretize the data are found above in the `Data Processing` folder, though these are only important if one wishes to re-process the data to their liking.
 
+*To download the dataset*
+Go to the shared Google Drive folder [here](https://drive.google.com/file/d/1lzocZnho2ltSUfN9F8ANRFVj_ozVtpzP/view?usp=sharing), and download the file titled `SST_Data.mat`, which you could then save to the same path as `Main`.
+
+[1]:  JPL MUR MEaSUREs Project. 2019. GHRSST
+Level 4 MUR 0.25 deg Global Foundation
+Sea Surface Temperature Analysis. Ver. 4.2.
+PO.DAAC, CA, USA. Dataset accessed [2021-
+10-10] at https://doi.org/10.5067/GHM25-
+4FJ42.
