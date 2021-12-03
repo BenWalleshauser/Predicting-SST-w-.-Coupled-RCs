@@ -25,7 +25,7 @@ GHRSST L2P skin and sub skin SST observations from several instruments, and is p
 
 The dataset was downloaded and then processed such that the grid-size was now 1.50°x1.50°. The files used to download and discretize the data are found above in the `Data Processing` folder, though these are only important if one wishes to re-process the data to their liking.
 
-*To download the dataset:*\
+*To download the processed dataset:*\
 Go to the shared Google Drive folder [here](https://drive.google.com/drive/folders/1cQlzee6pGvgV4Ght5c5QYSn3I--r9Zm9?usp=sharing), and download the file titled `SST_Data.mat`, which you could then save to the same path as `Main`.
 
 [1]:  JPL MUR MEaSUREs Project. 2019. GHRSST
