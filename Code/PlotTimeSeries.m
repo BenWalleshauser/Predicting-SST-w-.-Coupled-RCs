@@ -15,8 +15,7 @@ plot(TotalTime-val_days-delay:TotalTime,SST_total(TotalTime-val_days-delay:Total
 grid on
 xlabel('Days into Data Set','FontSize', 15)
 ylabel('SST (Degrees Kelvin)','FontSize', 15)
-%title('Forecasted vs. Actual SST')
-title('Pacific Ocean near Tuvalu')
+title('Forecasted vs. Actual SST')
 ylim=get(gca,'ylim');
 xlim=get(gca,'xlim');
 text(xlim(2)-97,ylim(2)-0.05*(ylim(2)-ylim(1)),['Lat: ', num2str(lat1)],'FontSize', 15);
