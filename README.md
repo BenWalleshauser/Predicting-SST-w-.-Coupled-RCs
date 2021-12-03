@@ -1,6 +1,6 @@
 # Predicting Sea Surface Temperatures with Coupled Reservoir Computers
 
-Reservoir computing is a type of neural net that uses randomly generated input and middle weights, which effectively reduces training time compared to a traditional RNN. In these files, coupled reservoir computers are utilized in order to predict global sea surface temperatures (SST). In order to create a trained model which will then subsequently forecast SSTs, simply open the file in the `Code` folder titled `Main` and hit run.
+Reservoir computing is a type of neural net that uses randomly generated input and middle weights, which effectively reduces training time compared to a traditional RNN. In these files, coupled reservoir computers are utilized in order to predict global sea surface temperatures (SST). In order to create a trained model which will then subsequently forecast SSTs, download the processed dataset (see section below) then simply open the file in the `Code` folder titled `Main` and hit run.
 
 If you'd like to see previously collected results animated on a map or globe, download one of the MP4s above.
 
@@ -19,6 +19,16 @@ Files:
 - `ReturnInds`: Returns the index of a point specified by coordinates.
 
 Data:
-[...]
+The dataset used to train and validate the model is titled “GHRSST Level 4 MUR 0.25deg Global Foundation Sea Surface Temperature Analysis (v4.2)” which
+contains sea surface temperature data in degrees Kelvin
+on a global 0.25 degree grid from 2002 to 2021 in one
+day increments. This version is based on nighttime
+GHRSST L2P skin and sub skin SST observations from
+several instruments, and is publicly available online via
+PODAAC [1]. The data was downloaded with the use
+of OPENDAP on 10/10/2021. The years 2003 to 2020
+of the dataset were selected to form the training and
+validation dataset. The data is given in an equirectangular format, which is used throughout the modelling
+process for simplification purposes even though this implicitly leads to a more refined mesh near the pole
 
 
