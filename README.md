@@ -28,7 +28,7 @@ The dataset was downloaded and then processed such that the grid-size was now 1.
 *To download the processed dataset:*\
 Go to the shared Google Drive folder [here](https://drive.google.com/drive/folders/1cQlzee6pGvgV4Ght5c5QYSn3I--r9Zm9?usp=sharing), and download the file titled `SST_Data.mat`, which you could then save to the same path as `Main`.
 
-**References:**
+**References:**\
 [1]:  JPL MUR MEaSUREs Project. 2019. GHRSST
 Level 4 MUR 0.25 deg Global Foundation
 Sea Surface Temperature Analysis. Ver. 4.2.
