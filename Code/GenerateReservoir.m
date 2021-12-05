@@ -1,4 +1,4 @@
-function A = generate_reservoir(dim_reservoir, rho, density)
+function A = GenerateReservoir(dim_reservoir, rho, density)
 %Creates the middle reservoir matrix from a uniform distribution of values from -1 to 1 with a set density.
 %The spectral radius is set to rho.
 
