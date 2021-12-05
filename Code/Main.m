@@ -8,9 +8,9 @@ clc
 Data = load('SST_Data');
 
 SST_total = Data.SST_total;   %Each rows of SST_total corresponds to a new day, each column corresponds to a different index on the map
-LandInd = Data.LandInd;       %The land indices of the original undiscretized map. Only used for aesthetic/plotting purposes at the end
-lat = Data.lat;               %Latitude values - just use these to label plots
-lon= Data.lon;                %Longitude values - just use these to label plots
+LandInd = Data.LandInd;       %The land indices of the original undiscretized map. Only used for plotting purposes at the end
+lat = Data.lat;               %Latitude values - use these to label plots
+lon= Data.lon;                %Longitude values -use these to label plots
 
 %The value which NaNs (points on land) are set to
 NaNset = 250;
