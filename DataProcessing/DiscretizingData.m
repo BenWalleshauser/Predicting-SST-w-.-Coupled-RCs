@@ -2,7 +2,7 @@
 % 9/27
 
 %Discretizes and compiles data
-%% Initialization Data
+%% Initialization 
 clc
 clear 
 
