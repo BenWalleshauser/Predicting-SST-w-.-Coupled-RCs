@@ -185,7 +185,7 @@ az = 50;
 el = 10;
 
 PlotGlobe(n,m,LandInd,SST_predicted,SST_validate,val_days,nBox,SST_train(train_days,:),Mode,az,el)
-%PlotGlobe_V2(lon,lat,n,m,LandInd,SST_predicted,SST_validate,val_days,nBox)  %Use this version if you don't have the Climate Data Toolbox
+%PlotGlobe_V2(lon,lat,n,m,LandInd,SST_predicted,SST_validate,val_days,nBox,az,el)  %Use this version if you don't have the Climate Data Toolbox
 
 %% Plot Error
 PlotError(SST_predicted,SST_validate,val_days,nBox,mBox,NaNset)
