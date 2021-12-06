@@ -6,7 +6,7 @@ SSTValidation_Plot = 250.*ones(n,m);
 
 SavePlot = 0;
 %Uncomment if you'd like to save the plot
-% filename = ['SavedVids',num2str(now*10^10),'.avi'];
+% filename = ['MyVideo.avi'];
 % myVideo = VideoWriter(filename); %open video file
 % myVideo.FrameRate = 10;  %can adjust this, 5 - 10 works well for me
 % myVideo.Quality = 100;
