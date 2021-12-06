@@ -1,4 +1,4 @@
-function PlotMap(lon,lat,n,m,LandInd,SST_predicted,SST_validation,val_days,nBox)
+function PlotMap_V2(lon,lat,n,m,LandInd,SST_predicted,SST_validation,val_days,nBox)
 % Plotting data on a flat map
 
 dim = n/nBox; %num of points in discretized row
