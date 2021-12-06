@@ -1,4 +1,4 @@
-function PlotGlobe_V2(lon,lat,n,m,LandInd,SST_predicted,SST_validation,val_days,nBox)
+function PlotGlobe_V2(lon,lat,n,m,LandInd,SST_predicted,SST_validation,val_days,nBox,az,el)
 % Plotting Globe Data
 
 SST_predicted_Plot = 250.*ones(n,m);
@@ -6,16 +6,12 @@ SSTValidation_Plot = 250.*ones(n,m);
 
 SavePlot = 0;
 %Uncomment if you'd like to save the plot
-% filename = ['C:\Users\benwa\Documents\Research\SST Predictor\Vids\',num2str(now*10^10),'.avi'];
+% filename = ['SavedVids',num2str(now*10^10),'.avi'];
 % myVideo = VideoWriter(filename); %open video file
 % myVideo.FrameRate = 10;  %can adjust this, 5 - 10 works well for me
 % myVideo.Quality = 100;
 % open(myVideo)
 % SavePlot = 1;
-
-%Camera settings: 
-az = 50+180;
-el = 10;
 
 dim = n/nBox; %num of points in discretized row
 for elapsed = 1:val_days
