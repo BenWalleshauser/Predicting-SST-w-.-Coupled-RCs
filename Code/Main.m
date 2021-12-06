@@ -49,7 +49,7 @@ PackInd = FindPackIndices(SST_total,nBox,mBox,nPack,mPack,NaNset);
 %      2  6   10   14
 %      3  7   11   15
 %      4  8   12   16]
-%   Therefore the SST at the top left is indexed by calling SST_
+%   Therefore the SST at the top left is indexed by calling ind = 1
 %% RC Parameters
 %Metaparameters for the reservoir computer
 
