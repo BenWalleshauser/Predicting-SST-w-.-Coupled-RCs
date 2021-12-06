@@ -164,10 +164,28 @@ close(g)
 SST_predicted = SST_predicted(2:val_days+1,:);                                                      %getting rid of initial condition from prediction
 
 %% Plot Map
-PlotMap(lon,lat,n,m,LandInd,SST_predicted,SST_validate,val_days,nBox)
+%Modes:
+% 1-Regular SST
+% 2-Change in SST
+% 3-Error
+Mode =1;
+
+PlotMap(lon,lat,n,m,LandInd,SST_predicted,SST_validate,val_days,nBox,SST_train(train_days,:),Mode)
+%PlotMap_V2(lon,lat,n,m,LandInd,SST_predicted,SST_validate,val_days,nBox) %Use this version if you don't have the Climate Data Toolbox
 
 %% Plot Globe
-PlotGlobe(lon,lat,n,m,LandInd,SST_predicted,SST_validate,val_days,nBox)
+%Modes:
+% 1-Regular SST
+% 2-Change in SST
+% 3-Error
+Mode = 1;
+
+%Camera settings: 
+az = 50;
+el = 10;
+
+PlotGlobe(n,m,LandInd,SST_predicted,SST_validate,val_days,nBox,SST_train(train_days,:),Mode,az,el)
+%PlotGlobe_V2(lon,lat,n,m,LandInd,SST_predicted,SST_validate,val_days,nBox)  %Use this version if you don't have the Climate Data Toolbox
 
 %% Plot Error
 PlotError(SST_predicted,SST_validate,val_days,nBox,mBox,NaNset)
