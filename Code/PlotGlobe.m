@@ -35,12 +35,12 @@ Plot_2 = 250.*ones(n,m);
 
 SavePlot = 0;
 %Uncomment if you'd like to save the plot
-filename = ['C:\Users\benwa\Documents\Research\SST Predictor\Vids\',num2str(now*10^10),'.avi'];
-myVideo = VideoWriter(filename); %open video file
-myVideo.FrameRate = 10;  %can adjust this, 5 - 10 works well for me
-myVideo.Quality = 100;
-open(myVideo)
-SavePlot = 1;
+%filename = ['MyVideo.avi'];
+%myVideo = VideoWriter(filename); %open video file
+%myVideo.FrameRate = 10;  %can adjust this, 5 - 10 works well for me
+%myVideo.Quality = 100;
+%open(myVideo)
+%SavePlot = 1;
 
 [Lat,Lon] = cdtgrid(0.25);
 dim = n/nBox; %num of points in discretized row
