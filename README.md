@@ -13,7 +13,7 @@ If you'd like to see previously collected results animated on a map or globe, do
 - `Neighbors`: Finds the neighboring indices surrounding a given index on a map. 
 - `ReturnCoords`: Returns the coordinates of an index.
 - `ReturnInds`: Returns the index of a point specified by coordinates.
-- `PlotError`: Plots the average and maximum error of the forecast.
+- `PlotError`: Plots the average and maximum error of the forecast. Requires MATLAB's [Mapping Toolbox](https://www.mathworks.com/products/mapping.html).
 - `PlotGlobe`: Plots the forecasted and actual SST on a globe. The orientation of the globe can be changed within the file. This animation can also be saved as an AVI if      desired. Uses the [Climate Data Toolbox](https://www.chadagreene.com/CDT/CDT_Getting_Started.html).
 - `PlotMap`: Plots the forecasted and actual SST on a flat map. This animation can also be saved as an AVI if desired. Uses the [Climate Data Toolbox](https://www.chadagreene.com/CDT/CDT_Getting_Started.html).
 - `PlotTimeSeries`: Plots the forecasted and actual SST over time for a chosen point on the map.
