@@ -37,4 +37,4 @@ Go to the shared Google Drive folder [here](https://drive.google.com/drive/folde
 Level 4 MUR 0.25 deg Global Foundation
 Sea Surface Temperature Analysis. Ver. 4.2.
 PO.DAAC, CA, USA. Dataset accessed [2021-
-10-10] at https://podaac.jpl.nasa.gov/dataset/MUR25-JPL-L4-GLOB-v04.2?ids=&values=&search=mur%2025&provider=PODAAC.
+10-10] at https://doi.org/10.5067/GHM25-4FJ42.
