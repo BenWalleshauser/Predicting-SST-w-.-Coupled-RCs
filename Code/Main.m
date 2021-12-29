@@ -127,8 +127,6 @@ clear r_state                                              %Clearing reservoir s
 r_state = {};
 
 %Initially priming the reservoirs
-
-%Priming reservoirs
 prime_days = 7;
 SST_prime = SST_train(train_days-prime_days+1:train_days-1,:);
 for i = 1:prime_days-1
