@@ -126,7 +126,12 @@ g = waitbar(0,'Please wait...');
 clear r_state                                              %Clearing reservoir state
 r_state = {};
 
-for i = 1:val_days
+%Initially priming the reservoirs
+
+%Priming reservoirs
+prime_days = 7;
+SST_prime = SST_train(train_days-prime_days+1:train_days-1,:);
+for i = 1:prime_days-1
     for p = 1:NumPacks
         
         iPackInd = nonzeros(PackInd(:,p));
@@ -151,10 +156,43 @@ for i = 1:val_days
             continue
         end
         if i == 1   
-           r_state{1,p} = tanh(W_in{1,dim_system}*SST_predicted(i,TotalInd)'+b);                    %initializing reservoir state for each pack
+           r_state{1,p} = tanh(W_in{1,dim_system}*SST_prime(i,TotalInd)'+b);                    %initializing reservoir state for each pack
         else
-            r_state{1,p} = tanh(A*r_state{1,p} + W_in{1,dim_system}*SST_predicted(i,TotalInd)'+b);  %cycling reservoir state
+            r_state{1,p} = tanh(A*r_state{1,p} + W_in{1,dim_system}*SST_prime(i,TotalInd)'+b);  %cycling reservoir state
         end
+
+    end
+end
+
+
+
+
+for i = 1:val_days
+    for p = 1:NumPacks
+        
+        iPackInd = nonzeros(PackInd(:,p));
+        CloudInd = zeros(8,length(iPackInd));
+        %Finding the indices of the boxes that are going to be considered in RC
+        for z = 1:length(iPackInd)
+            nbInds = Neighbors(iPackInd(z),nBox,mBox);
+            for y = 1:length(nbInds)
+                if SST_total(1,nbInds(y)) == NaNset     
+                    nbInds(y) = 0;
+                end
+            end
+            CloudInd(1:length(nbInds),z) = nbInds;   
+        end
+
+        CloudInd = reshape(CloudInd,[],1);
+        TotalInd = [iPackInd; CloudInd];
+        TotalInd = unique(TotalInd,'stable');       
+        TotalInd = TotalInd(TotalInd~=0); 
+        dim_system = length(TotalInd);
+        if dim_system == 0                                     
+            continue
+        end
+        
+        r_state{1,p} = tanh(A*r_state{1,p} + W_in{1,dim_system}*SST_predicted(i,TotalInd)'+b);  %cycling reservoir state
         SST_predicted(i+1,iPackInd) = W_out{1,p}*r_state{1,p};                                      %reading out predicted SST
 
     end
