@@ -4,7 +4,8 @@ Reservoir computing is a type of neural net that uses randomly generated input a
 
 If you'd like to see previously collected results, watch the video below!
 
-https://user-images.githubusercontent.com/72924413/145119884-32123d9f-e023-4d77-91f6-43837da5d24d.mp4
+https://user-images.githubusercontent.com/72924413/147812076-44962675-0551-44ef-8d2a-bde70d571dc6.mp4
+
 
 # **Code:**
 - `Main`: Use this file to run the model. This is the main code which contains the architecture of the RCs and also where metaparameters can be adjusted. Forecast will run autonomously.
