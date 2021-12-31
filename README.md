@@ -7,7 +7,8 @@ If you'd like to see previously collected results, watch the video below!
 https://user-images.githubusercontent.com/72924413/145119884-32123d9f-e023-4d77-91f6-43837da5d24d.mp4
 
 # **Code:**
-- `Main`: Use this file to run the model. This is the main code which contains the architecture of the RCs and also where metaparameters can be adjusted.
+- `Main`: Use this file to run the model. This is the main code which contains the architecture of the RCs and also where metaparameters can be adjusted. Forecast will run autonomously.
+- `Main_Daily`: The same as `Main`, except forecasts now utilize the actual values of the SST and continually readout one day forecasts.
 - `ActualAreaRectangle`: Input the index of an area on the flat map and the function outputs the actual area that the index covers on a sphere.  
 - `FindPackIndices`: Finds the corresponding indices on the map that are to be contained in a pack and organizes them into a column.
 - `GenerateResevoir`: Creates the middle weight matrix 'A' with a chosen density and spectral radius.
