@@ -76,7 +76,7 @@ for i = 1:(nPack+2)*(mPack+2)
 end
 b = bias*ones(dim_reservoir,1);
 
-for p = 1:NumPacks   %creating NGRC for each group
+for p = 1:NumPacks   %creating RC for each group
     
     iPackInd = nonzeros(PackInd(:,p));                      %The indices that are going to be predicted with the given RC                     
     CloudInd = zeros(8,length(iPackInd));                   %The indices that surround the pack
