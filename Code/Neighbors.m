@@ -3,7 +3,7 @@ function [neighbors] = Neighbors(ind, nBox, mBox)
 %neighbors that wrap around on the bottom of the map as they are all land
 %values (due to Antarctica). 
 
-k = 0; %indber of neighbors, increases as conditions met
+k = 0; %index of neighbors, increases as conditions met
 
 %% Top, Bottom, Left, and Right
 %Neighbor beneath
